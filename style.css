@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicas das Princesas Disney</title>
+    <!-- Link para a fonte Dancing Script -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com o nome do projeto -->
+    <h1>Musicas das Princesas Disney</h1>
+
+    <!-- Container para os botões e player de música -->
+    <div class="container">
+        <!-- Botões para cada música -->
+        <button onclick="playMusic('music1')">Rapunzel</button>
+        <button onclick="playMusic('music2')">Tiana</button>
+        <button onclick="playMusic('music3')">Bella</button>
+        <button onclick="playMusic('music3')">Merida</button>
+        <button onclick="playMusic('music3')">Anastasia</button>
+
+        <!-- Área do player de música -->
+        <div class="music-container">
+            <audio id="music1" class="audio-player" controls>
+                <source src="rapunzel.mp3" type="audio/mp3">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <audio id="music2" class="audio-player" controls>
+                <source src="tiana.mp3" type="audio/mp3">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <audio id="music3" class="audio-player" controls>
+                <source src="bella.mp3" type="audio/mp3">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </div>
+            audio id="music3" class="audio-player" controls>
+                <source src="bella.mp3" type="audio/mp3">
+                Seu navegador não< suporta o elemento de áudio.
+            </audio>
+        </div>
+            audio id="music3" class="audio-player" controls>
+                <source src="merida.mp3" type="audio/mp3">
+                Seu navegador não< suporta o elemento de áudio.
+            </audio>
+        </div>
+            audio id="music3" class="audio-player" controls>
+                <source src="anastasia.mp3" type="audio/mp3">
+                Seu navegador não< suporta o elemento de áudio.
+            </audio>
+        </div>
+
+        <!-- Texto adicional ou descrição -->
+        <p class="princess-font">Escolha a sua princesa favorita para ouvir sua música mágica!</p>
+    </div>
+
+    <!-- Script JavaScript para controlar a música -->
+    <script>
+        function playMusic(id) {
+            // Pausa todas as músicas
+            const audios = document.querySelectorAll('audio');
+            audios.forEach(audio => audio.pause());
+
+            // Reproduz a música escolhida
+            const audio = document.getElementById(id);
+            audio.play();
+        }
+    </script>
+</body>
+</html>
 
