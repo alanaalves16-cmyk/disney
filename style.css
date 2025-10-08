@@ -6,7 +6,7 @@ body {
     color: #000607;
     font-size: 30px;
     margin-top: 60px;
-    background-color: #0486f1;
+    background-color: #FFBEAE;
     display: flex;
     flex-direction: column;
     grid-template-columns: repeat(2, auto);
@@ -19,7 +19,7 @@ body {
     border: none;
     border-radius: 8px;
     background-color: #0401bd;
-    color: rgba(252, 252, 252, 0.753);
+    color: #FF5682;
     cursor: pointer;
   }
   
